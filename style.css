@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
     min-width: 300px;
     user-select: none;
 }
@@ -20,7 +20,8 @@ nav {
 .navbar-dark .navbar-brand {
     color: var(--main-orange);
     font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    font-family: 'DynaPuff', cursive;
 }
 
 .logo {
@@ -34,7 +35,10 @@ nav {
 }
 
 h1 {
+    font-family: 'DynaPuff', cursive;
     color: var(--main-orange);
+    font-size: 3.3rem;
+    margin: 1.5rem 0;
 }
 
 .column {
@@ -48,7 +52,7 @@ h1 {
 }
 
 .title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .about-text {
@@ -89,10 +93,11 @@ h1 {
 
 h3 {
     padding: 2rem;
+    font-weight: 200;
 }
 
 .cart {
-    border: 2px solid var(--main-orange);
+    border: 2px solid rgba(0, 0, 0, 0.404);
     background-color: rgba(255, 255, 255, 0.87);
     padding: .4rem 1rem;
     margin: 1.2rem;
@@ -109,7 +114,7 @@ h3 {
     position: absolute;
     top: -18px;
     right: -10px;
-    background-color: #ac1313;
+    background-color: #bb2222;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
     color: whitesmoke;
     border-radius: 50%;
@@ -119,4 +124,20 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+form {
+    max-width: 650px ;
+    width: 70%;
+    margin: 0 auto;
+}
+
+iframe {
+    padding: 1rem;
+    border-radius: 35px;
+}
+
+footer {
+    text-align: center;
+    padding: 6rem 3rem 3rem;
 }
