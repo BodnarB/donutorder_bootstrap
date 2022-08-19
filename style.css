@@ -58,7 +58,7 @@ h1 {
 
 #info {
     background-color: whitesmoke;
-
+    padding-bottom: 1.2rem;
 }
 
 .img-fluid {
@@ -103,4 +103,20 @@ h3 {
 
 .waves {
     margin-top: -2px;
+}
+
+.cart-items{
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    background-color: #ac1313;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+    color: whitesmoke;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
