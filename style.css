@@ -57,7 +57,6 @@ h1 {
 }
 
 #info {
-    padding-top: 3rem;
     background-color: whitesmoke;
 
 }
@@ -89,7 +88,7 @@ h1 {
 }
 
 h3 {
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 .cart {
@@ -100,4 +99,8 @@ h3 {
     border-radius: 0.4rem;
     font-size: 1.44rem;
     z-index: 2;
+}
+
+.waves {
+    margin-top: -2px;
 }
