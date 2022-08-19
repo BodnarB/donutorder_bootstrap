@@ -25,7 +25,7 @@ nav {
 }
 
 .logo {
-    margin-right:0.3rem ;
+    margin-right: 0.3rem;
 }
 
 #about {
@@ -106,11 +106,16 @@ h3 {
     z-index: 2;
 }
 
+.cart:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
 .waves {
     margin-top: -2px;
 }
 
-.cart-items{
+.cart-items {
     position: absolute;
     top: -18px;
     right: -10px;
@@ -128,11 +133,12 @@ h3 {
 
 #contact {
     background-color: rgb(97 127 149);
+    background: linear-gradient(180deg, rgba(97, 127, 149, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: whitesmoke;
 }
 
 form {
-    max-width: 650px ;
+    max-width: 650px;
     width: 70%;
     margin: 0 auto;
 }
@@ -144,5 +150,5 @@ iframe {
 
 footer {
     text-align: center;
-    padding: 6rem 3rem 3rem;
+    padding: 7rem 3rem 3rem;
 }
