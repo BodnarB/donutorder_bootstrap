@@ -116,6 +116,40 @@ h3 {
     background-color: white;
 }
 
+.product {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem 0;
+}
+
+.product-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.product p,
+.product i {
+    margin: 0 0.5rem;
+    display: inline;
+}
+
+.total {
+    background-color: #d3d3d3;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
 .waves {
     margin-top: -2px;
 }

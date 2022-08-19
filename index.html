@@ -93,13 +93,36 @@
             aria-controls="offcanvasRight">
             <div class="cart-items">0</div><i class="bi bi-cart-fill"></i>
         </div>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart (0 item)</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                ...
+                <div class="product">
+                    <div>
+                        <p class="product-title">Fancy donut</p>
+                        <div>
+                            <p class="quantity">Qty:1</p>
+                            <p class="product-price fw-bold">6$</p>
+                        </div>
+                        <i class="bi bi-trash3-fill"></i>
+                    </div>
+                    <img class="product-img img-thumbnail" src="./imgs/d2.jpeg" alt="">
+                </div>
+                <div class="product">
+                    <div>
+                        <p class="product-title">Chocolate donut</p>
+                        <div>
+                            <p class="quantity">Qty:1</p>
+                            <p class="product-price fw-bold">4$</p>
+                        </div>
+                        <i class="delete bi bi-trash3-fill"></i>
+                    </div>
+                    <img class="product-img img-thumbnail" src="./imgs/d1.jpeg" alt="">
+                </div>
+                <p class="total fw-bold">Total: 10$</p>
             </div>
         </div>
         <h3 class="text-center fs-1">Order donuts</h3>
@@ -203,7 +226,7 @@
                         card's content.</p>
                     <p class="price">6$</p>
                     <div class="d-flex align-items-center justify-content-evenly">
-                        
+
                         <input type="number" name="quantity" min="0" max="10" placeholder="0">
                         <a href="#" class="btn btn-warning">Add to cart</a>
                     </div>
