@@ -10,20 +10,28 @@ body {
 }
 
 nav {
-    background-color: rgb(19, 19, 19);
+    background-color:whitesmoke;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.897);
-    font-size: 1.15rem;
+.navbar-nav .nav-link {
+    color: #181818;
+    font-size: 1.2rem;
     font-weight: 300;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.3rem;
 }
 
-.navbar-dark .navbar-brand {
+.navbar-nav .nav-link:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(97, 127, 149, 0.2);
+}
+
+.navbar .navbar-brand {
     color: var(--main-orange);
     font-weight: 500;
     font-size: 2.2rem;
     font-family: 'DynaPuff', cursive;
+    padding: 0.1rem;
 }
 
 .logo {
@@ -49,7 +57,7 @@ h1 {
 
 .row {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
     width: 90%;
 }
 
@@ -97,7 +105,7 @@ h1 {
 }
 
 h3 {
-    padding: 2rem;
+    padding-bottom: 3.5rem;
     font-weight: 200;
 }
 
