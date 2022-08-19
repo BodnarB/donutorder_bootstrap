@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="">
+                <img class="logo" height="55" src="./imgs/logo.png" alt=""> TD
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="row">
+            <div class="col-md column d-flex align-items-start justify-content-center flex-column">
+                <h1>Tasty donuts</h1>
+                <p class="title">The best donuts in town</p>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores placeat
+                    impedit
+                    pariatur. Nostrum
+                    neque vitae atque quis voluptatibus itaque obcaecati assumenda vero.</p>
+                <button type="button" class="btn btn-outline-light">Get in touch
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                            d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+            <img class="col-md-4 column" src="./imgs/undraw_donut_love_kau1.svg" alt="">
+        </div>
+
+    </section>
+    <section id="info">
+        <div class="row">
+            <div class="col-md info-box">
+                <img class="img-fluid" src="./imgs/reshot-icon-calendar-QD7Z49KWGN.svg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                    laboriosam
+                    corporis voluptatum accusantium modi veritatis?</p>
+            </div>
+            <div class="col-md info-box">
+                <img class="img-fluid" src=".//imgs/reshot-icon-checklist-YUWL2XGFTQ.svg" alt="">
+                <p> Provident, officiis sequi facilis odit reiciendis exercitationem molestiae quae eos voluptatum
+                    accusantium
+                    accusamus
+                    perspiciatis quibusdam.</p>
+            </div>
+            <div class="col-md info-box">
+                <img class="img-fluid" src="./imgs/reshot-icon-location-M8RDUTQJK3.svg" alt="">
+                <p>Cupiditate nobis quidem ullam corrupti sed ducimus amet totam aspernatur odio rem! Dolores, magnam
+                    neque.</p>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#f5f5f5" fill-opacity="1"
+                d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,229.3C672,203,768,117,864,106.7C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+        <div class="position-fixed bottom-0 end-0 cart"><i class="bi bi-cart-fill"></i>
+        </div>
+        <h3 class="text-center display-6">Order donuts</h3>
+        <div class="row">
+            <div class="card col-md column">
+                <img src="./imgs/d2.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fancy donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">6$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+            <div class="card col-md column">
+                <img src="./imgs/d1.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chocolate donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">4$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+            <div class="card col-md column">
+                <img src="./imgs/d3.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Glazed donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">4$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+            <div class="card col-md column">
+                <img src="./imgs/d4.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Glazed donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">5$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+            <div class="card col-md column">
+                <img src="./imgs/d5.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Glazed donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">3$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+            <div class="card col-md column">
+                <img src="./imgs/d6.jpeg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Glazed donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">4$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+            <div class="card col-md column">
+                <img src="./imgs/pexels-cottonbro-4686960.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Glazed donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">3$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+            <div class="card col-md column">
+                <img src="./imgs/pexels-tima-miroshnichenko-7034520.jpg" class="card-img-top " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Glazed donut</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="price">6$</p>
+                    <a href="#" class="btn btn-warning">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

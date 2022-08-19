@@ -1,0 +1,103 @@
+:root {
+    --main-orange: #F9A826;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    min-width: 300px;
+    user-select: none;
+}
+
+nav {
+    background-color: rgb(19, 19, 19);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--main-orange);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.logo {
+    margin-right:0.3rem ;
+}
+
+#about {
+    padding: 3rem 0;
+    background-color: rgb(97 127 149);
+    color: whitesmoke;
+}
+
+h1 {
+    color: var(--main-orange);
+}
+
+.column {
+    margin: 0.5rem;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#info {
+    padding-top: 3rem;
+    background-color: whitesmoke;
+
+}
+
+.img-fluid {
+    max-height: 80px;
+    display: block;
+    margin: 1rem auto;
+}
+
+#order {
+    padding-bottom: 3rem;
+    background-color: #ffcf83;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    padding: 0;
+    margin: 0.5rem;
+    min-width: 260px;
+}
+
+.btn-warning {
+    display: block;
+}
+
+h3 {
+    padding-bottom: 2rem;
+}
+
+.cart {
+    border: 2px solid var(--main-orange);
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: .4rem 1rem;
+    margin: 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1.44rem;
+    z-index: 2;
+}
