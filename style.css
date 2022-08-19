@@ -15,6 +15,8 @@ nav {
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.897);
+    font-size: 1.15rem;
+    font-weight: 300;
 }
 
 .navbar-dark .navbar-brand {
@@ -62,7 +64,7 @@ h1 {
 
 #info {
     background-color: whitesmoke;
-    padding-bottom: 1.2rem;
+    padding-bottom: 2rem;
 }
 
 .img-fluid {
@@ -87,8 +89,11 @@ h1 {
     min-width: 260px;
 }
 
-.btn-warning {
-    display: block;
+.price {
+    background-color: #ececec;
+    width: fit-content;
+    padding: 0 1rem;
+    border-radius: 1rem;
 }
 
 h3 {

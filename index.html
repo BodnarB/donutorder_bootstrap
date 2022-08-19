@@ -88,9 +88,19 @@
         </div>
     </section>
     <section id="order">
-        <img class="waves" src="./imgs/wave.svg" alt="">
-        <div class="position-fixed bottom-0 end-0 cart">
+        <img class="waves" src="./imgs/wavewh.svg" alt="">
+        <div class="position-fixed bottom-0 end-0 cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
             <div class="cart-items">0</div><i class="bi bi-cart-fill"></i>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart (0 item)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
         </div>
         <h3 class="text-center fs-1">Order donuts</h3>
         <div class="row">
@@ -101,7 +111,10 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">6$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-md column">
@@ -111,7 +124,10 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">4$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-md column">
@@ -121,7 +137,10 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">4$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-md column">
@@ -131,7 +150,10 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">5$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-md column">
@@ -141,7 +163,10 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">3$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-md column">
@@ -151,7 +176,10 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">4$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-md column">
@@ -161,7 +189,10 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">3$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
             <div class="card col-md column">
@@ -171,7 +202,11 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <p class="price">6$</p>
-                    <a href="#" class="btn btn-warning">Add to cart</a>
+                    <div class="d-flex align-items-center justify-content-evenly">
+                        
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" placeholder="0">
+                        <a href="#" class="btn btn-warning">Add to cart</a>
+                    </div>
                 </div>
             </div>
         </div>
