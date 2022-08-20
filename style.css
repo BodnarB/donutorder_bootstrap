@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-    background-color:whitesmoke;
+    background-color: whitesmoke;
 }
 
 .navbar-nav .nav-link {
@@ -21,9 +21,13 @@ nav {
     padding: 0.2rem 0.3rem;
 }
 
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover {
     color: rgb(0, 0, 0);
     background-color: rgba(97, 127, 149, 0.2);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .navbar .navbar-brand {
