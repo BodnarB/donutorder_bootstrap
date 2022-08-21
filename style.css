@@ -101,6 +101,16 @@ h1 {
     min-width: 260px;
 }
 
+.card-title, .card-text, .price {
+    margin: 1rem;
+}
+
+.card-body {
+    padding: 0;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
 .price {
     background-color: #ececec;
     width: fit-content;
@@ -109,7 +119,7 @@ h1 {
 }
 
 h3 {
-    padding-bottom: 3.5rem;
+    padding: 1.5rem 0;
     font-weight: 200;
 }
 
@@ -123,9 +133,38 @@ h3 {
     z-index: 2;
 }
 
+.add-to-cart {
+    background: linear-gradient(180deg, rgba(181,106,120,1) 0%, #4c232b 100%);
+    padding: 0.6rem;
+}
+
+.add-to-cart input[type="number"] {
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    border: none;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
 .cart:hover {
     cursor: pointer;
     background-color: white;
+}
+
+.btn-add {
+    background-color: #faf9f9;
+    border: none;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+}
+
+.btn-add:hover {
+    background-color: #ffe8c3;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .product {
