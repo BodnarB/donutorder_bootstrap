@@ -140,18 +140,14 @@ h3 {
     padding: 0.7rem;
 }
 
-.add-to-cart input[type="number"] {
+.add-to-cart select {
     border-radius: 0.3rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
     border: none;
     text-align: center;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {
-  opacity: 1;
-}
 
 .cart:hover {
     cursor: pointer;
