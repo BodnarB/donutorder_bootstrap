@@ -148,6 +148,10 @@ h3 {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
 
+.remove-icon:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
 
 .cart:hover {
     cursor: pointer;
