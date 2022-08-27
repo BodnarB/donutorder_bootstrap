@@ -37,22 +37,28 @@ addBtn.forEach(n => n.addEventListener('click', () => {
 
 function sumCart() {
     sum = totalCart.reduce((prev, next) => prev + next.productTotalPrice, 0)
-    totalPriceHTML.innerHTML = `<p>${sum} €<p/>`
-}
-
-function render() {
+    totalPriceHTML.innerText = `Total: ${sum}€`
     let totalQty = 0
     for (let i = 0; i < totalCart.length; i++) {
         totalQty += totalCart[i].productQty
     }
+    if (totalQty <= 1) {
+        shoppingCartTite.innerText = `Shopping cart (${totalQty} item)`
+    }
+    else {
+        shoppingCartTite.innerText = `Shopping cart (${totalQty} items)`
+    }
     cartItemsNumber.innerHTML = totalQty
-    shoppingCartTite.innerText = `Shopping cart (${totalQty} item)`
+
+}
+
+function render() {
     let text = ``
     sumCart()
     totalCart.forEach(prod => text += `    
     <div class="product"><div><p class="product-title">${prod.productName}</p>
     <div><p class="quantity">Qty:</p><input id="${prod.productName}" type="number" class="qty" name="quantity" min="1" max="25" value="${prod.productQty}">
-    <p class="product-price fw-bold">${prod.productPrice} $</p></div>
+    <p class="product-price fw-bold">${prod.productPrice} €</p></div>
     <i class="bi bi-trash3-fill remove-icon js-remove"></i></div>
     <img class="product-img img-thumbnail" src="${prod.productImg}" alt="">
     </div>`)

@@ -193,6 +193,20 @@ h3 {
     display: inline;
 }
 
+.qty {
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.product-title {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
 .total {
     background-color: #d3d3d3;
     padding: 1rem;
