@@ -108,7 +108,7 @@
             </div>
         </div>
         <h3 class="text-center">Order donuts</h3>
-        <div class="row pt-4">
+        <div class="row pt-4 products-container">
             <div class="card col-md column">
                 <img src="./imgs/d2.jpeg" class="card-img-top " alt="...">
                 <div class="card-body">
@@ -211,18 +211,18 @@
         <img class="waves" src="./imgs/waveor.svg" alt="">
         <h3 class="text-center">Contact</h3>
         <div class="row align-items-center">
-            <form class="column col-lg" action="post">
+            <form action="#" class="column col-lg" method="post">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="email" class="form-control" id="name">
+                    <input type="email" class="form-control" id="name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-light">Submit</button>
             </form>
