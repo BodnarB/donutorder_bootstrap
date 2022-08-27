@@ -2,8 +2,7 @@ const addBtn = document.querySelectorAll('.js-add')
 const cartHTML = document.querySelector('.js-cart')
 const totalPriceHTML = document.querySelector('.js-total')
 const cartItemsNumber = document.querySelector('.js-cart-items')
-const shoppingCartTite = document.querySelector('.js-shopping-cart-title')
-let cart = []
+const shoppingCartTitle = document.querySelector('.js-shopping-cart-title')
 let totalCart = []
 let sum
 
@@ -11,13 +10,12 @@ addBtn.forEach(n => n.addEventListener('click', () => {
     let prodName = n.parentElement.parentElement.children[0].innerHTML
     let prodPrice = parseInt(n.parentElement.parentElement.children[2].innerHTML)
     let prodImg = n.parentElement.parentElement.previousElementSibling
-    if (cart.includes(prodName)) {
+    if (totalCart.filter(e => e.productName === prodName).length > 0) {
         let index = totalCart.findIndex(x => x.productName === prodName)
         totalCart[index].productQty += 1
         totalCart[index].productTotalPrice = totalCart[index].productQty * prodPrice
     }
     else {
-        cart.push(prodName)
         totalCart.push({
             ['productName']: prodName,
             ['productQty']: 1,
@@ -32,8 +30,7 @@ addBtn.forEach(n => n.addEventListener('click', () => {
     sumCart()
 }))
 
-// TODO: add ID for products, and check cart by prodId, not prodName (Prevent error, in case products has same name.)
-// TODO: delete cart list, and get these infos from totalCart
+// TODO: add ID for products, and check cart by prodId, not prodName (To prevent errors, in case products has same name.)
 
 function sumCart() {
     sum = totalCart.reduce((prev, next) => prev + next.productTotalPrice, 0)
@@ -43,13 +40,12 @@ function sumCart() {
         totalQty += totalCart[i].productQty
     }
     if (totalQty <= 1) {
-        shoppingCartTite.innerText = `Shopping cart (${totalQty} item)`
+        shoppingCartTitle.innerText = `Shopping cart (${totalQty} item)`
     }
     else {
-        shoppingCartTite.innerText = `Shopping cart (${totalQty} items)`
+        shoppingCartTitle.innerText = `Shopping cart (${totalQty} items)`
     }
     cartItemsNumber.innerHTML = totalQty
-
 }
 
 function render() {
@@ -70,7 +66,6 @@ function removeItem() {
         let delId = d.parentElement.firstChild.innerHTML
         let index = totalCart.findIndex(x => x.productName === delId)
         totalCart.splice(index, 1)
-        cart.splice(index, 1)
         d.parentElement.parentElement.remove()
         sumCart()
     }))
