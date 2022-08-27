@@ -51,9 +51,8 @@ function sumCart() {
 function render() {
     let text = ``
     sumCart()
-    totalCart.forEach(prod => text += `    
-    <div class="product"><div><p class="product-title">${prod.productName}</p>
-    <div><p class="quantity">Qty:</p><input id="${prod.productName}" type="number" class="qty" name="quantity" min="1" max="25" value="${prod.productQty}">
+    totalCart.forEach(prod => text += `<div class="product"><div><p class="product-title">${prod.productName}</p>
+    <div class="cart-info"><p class="quantity">Qty:</p><input id="${prod.productName}" type="number" class="qty" name="quantity" min="1" max="25" value="${prod.productQty}">
     <p class="product-price fw-bold">${prod.productPrice} €</p></div>
     <i class="bi bi-trash3-fill remove-icon js-remove"></i></div>
     <img class="product-img img-thumbnail" src="${prod.productImg}" alt="">
@@ -72,10 +71,12 @@ function removeItem() {
 }
 
 function changeQty() {
-    document.querySelectorAll('.qty').forEach(c => c.addEventListener('click', () => {
+    document.querySelectorAll('.qty').forEach(c => c.addEventListener('input', () => {
         let index = totalCart.findIndex(x => x.productName === c.id)
         totalCart[index].productQty = parseInt(c.value)
         totalCart[index].productTotalPrice = totalCart[index].productQty * totalCart[index].productPrice
         sumCart()
     }))
 }
+
+// TODO: if qty changed to 0, remove it from cart render
