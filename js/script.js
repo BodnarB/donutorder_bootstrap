@@ -46,17 +46,21 @@ function sumCart() {
         shoppingCartTitle.innerText = `Shopping cart (${totalQty} items)`
     }
     cartItemsNumber.innerHTML = totalQty
+    if (totalCart.findIndex(x => x.productQty === 0) >= 0) {
+        let index = totalCart.findIndex(x => x.productQty === 0)
+        totalCart.splice(index, 1)
+    }
 }
 
 function render() {
     let text = ``
     sumCart()
-    totalCart.forEach(prod => text += `<div class="product"><div><p class="product-title">${prod.productName}</p>
-    <div class="cart-info"><p class="quantity">Qty:</p><input id="${prod.productName}" type="number" class="qty" name="quantity" min="1" max="25" value="${prod.productQty}">
+    totalCart.forEach(prod => text += `
+    <div class="product"><div><p class="product-title">${prod.productName}</p><div class="cart-info">
+    <p class="quantity">Qty:</p><input id="${prod.productName}" type="number" class="qty" name="quantity" min="1" max="25" value="${prod.productQty}">
     <p class="product-price fw-bold">${prod.productPrice} €</p></div>
     <i class="bi bi-trash3-fill remove-icon js-remove"></i></div>
-    <img class="product-img img-thumbnail" src="${prod.productImg}" alt="">
-    </div>`)
+    <img class="product-img img-thumbnail" src="${prod.productImg}" alt=""></div>`)
     cartHTML.innerHTML = text
 }
 
@@ -73,10 +77,17 @@ function removeItem() {
 function changeQty() {
     document.querySelectorAll('.qty').forEach(c => c.addEventListener('input', () => {
         let index = totalCart.findIndex(x => x.productName === c.id)
+        if (c.value === '' || c.value == 0) {
+            if (confirm('Are you sure to delete this product?') === true) {
+                c.value = 0
+                c.parentElement.parentElement.parentElement.remove()
+            }
+            else {
+                c.value = 1
+            }
+        }
         totalCart[index].productQty = parseInt(c.value)
         totalCart[index].productTotalPrice = totalCart[index].productQty * totalCart[index].productPrice
         sumCart()
     }))
 }
-
-// TODO: if qty changed to 0, remove it from cart render
