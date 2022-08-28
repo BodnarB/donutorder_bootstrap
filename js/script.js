@@ -56,11 +56,18 @@ function render() {
     let text = ``
     sumCart()
     totalCart.forEach(prod => text += `
-    <div class="product"><div><p class="product-title">${prod.productName}</p><div class="cart-info">
-    <p class="quantity">Qty:</p><input id="${prod.productName}" type="number" class="qty" name="quantity" min="1" max="25" value="${prod.productQty}">
-    <p class="product-price fw-bold">${prod.productPrice} €</p></div>
-    <i class="bi bi-trash3-fill remove-icon js-remove"></i></div>
-    <img class="product-img img-thumbnail" src="${prod.productImg}" alt=""></div>`)
+    <div class="product">
+        <div>
+            <p class="product-title">${prod.productName}</p>
+            <div class="cart-info">
+                <p class="quantity">Qty:</p>
+                <input id="${prod.productName}" type="number" class="qty" name="quantity" min="1" max="25" value="${prod.productQty}">
+                <p class="product-price fw-bold">${prod.productPrice} €</p>
+            </div>
+            <i class="bi bi-trash3-fill remove-icon js-remove"></i>
+        </div>
+        <img class="product-img img-thumbnail" src="${prod.productImg}" alt="">
+    </div>`)
     cartHTML.innerHTML = text
 }
 

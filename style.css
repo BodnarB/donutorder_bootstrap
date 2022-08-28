@@ -74,6 +74,13 @@ h1 {
     font-weight: 300;
 }
 
+.btn-outline-light {
+    color: #000000;
+    font-weight: 500;
+    border-color: #00000075;
+    background-color: #f9a826;
+}
+
 #info {
     background-color: whitesmoke;
     padding-bottom: 2rem;
