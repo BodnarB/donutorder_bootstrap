@@ -33,8 +33,8 @@ addBtn.forEach(n => n.addEventListener('click', () => {
 // TODO: add ID for products, and check cart by prodId, not prodName (To prevent errors, in case products has same name.)
 
 function sumCart() {
-    sum = totalCart.reduce((prev, next) => prev + next.productTotalPrice, 0)
-    totalPriceHTML.innerText = `Total: ${sum}€`
+    // sum = totalCart.reduce((prev, next) => prev + next.productTotalPrice, 0)
+    // totalPriceHTML.innerText = `Total: ${sum}€`
     let totalQty = 0
     for (let i = 0; i < totalCart.length; i++) {
         totalQty += totalCart[i].productQty
@@ -45,11 +45,15 @@ function sumCart() {
     else {
         shoppingCartTitle.innerText = `Shopping cart (${totalQty} items)`
     }
-    cartItemsNumber.innerHTML = totalQty
+    // cartItemsNumber.innerHTML = totalQty
     if (totalCart.findIndex(x => x.productQty === 0) >= 0) {
         let index = totalCart.findIndex(x => x.productQty === 0)
         totalCart.splice(index, 1)
     }
+    sum = totalCart.reduce((prev, next) => prev + next.productTotalPrice, 0)
+    totalPriceHTML.innerText = `Total: ${sum}€`
+    cartItemsNumber.innerHTML = totalQty
+
 }
 
 function render() {
@@ -73,7 +77,7 @@ function render() {
 
 function removeItem() {
     document.querySelectorAll('.js-remove').forEach(d => d.addEventListener('click', () => {
-        let delId = d.parentElement.firstChild.innerHTML
+        let delId = d.parentElement.firstElementChild.innerHTML
         let index = totalCart.findIndex(x => x.productName === delId)
         totalCart.splice(index, 1)
         d.parentElement.parentElement.remove()
