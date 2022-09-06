@@ -97,8 +97,18 @@ function changeQty() {
                 c.value = 1
             }
         }
+        if (c.value > 25) {
+            confirm('The maximum number of products that can be purchased is 25 ')
+            c.value = 25
+        }
+
         totalCart[index].productQty = parseInt(c.value)
         totalCart[index].productTotalPrice = totalCart[index].productQty * totalCart[index].productPrice
         sumCart()
+    }))
+    document.querySelectorAll('.qty').forEach(c => c.addEventListener('keypress', function (event) {
+        if (event.which < 48 || event.which > 57) {
+            event.preventDefault()
+        }
     }))
 }
