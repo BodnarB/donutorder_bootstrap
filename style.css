@@ -42,6 +42,10 @@ nav {
     margin-right: 0.3rem;
 }
 
+.container-fluid {
+    max-width: 1550px;
+}
+
 #about {
     padding: 3rem 0;
     background-color: rgb(97 127 149);
@@ -276,5 +280,17 @@ iframe {
 
 footer {
     text-align: center;
-    padding: 7rem 3rem 3rem;
+    padding: 2rem;
+    margin-top: 8rem;
+    background-color: #14141483;
+    border-top: 1px solid rgba(255, 255, 255, 0.082);
+}
+
+footer a.footerlink {
+    color: rgba(245, 245, 245, 0.6);
+}
+
+footer a.footerlink:hover {
+    color: #ffc149;
+    transition-duration: 0.3s;
 }
